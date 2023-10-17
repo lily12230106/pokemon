@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewort" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="./main.css">
+    <meta name="description" content="text text text">
+  </head>
+  <body>
+    <div class="main">
+      <h1>なきごえクイズ</h1>
+      <p class="judge"></p>
+        <div class="question">
+          <img src="img/qu.png" onclick="audio()" width="20%" height="20%">
+          <audio id="qu-audio" src="#">
+          </audio>
+        </div>
+        
+        <div class="choices">
+          <img id="c1-img" src="#" onclick="clickHandler(this)" width="180" height="180">
+          <img id="c2-img" src="#" onclick="clickHandler(this)" width="180" height="180">
+          <img id="c3-img" src="#" onclick="clickHandler(this)" width="180" height="180">
+        </div>
+        <div class="next" id="js-next"></div>
+    </div>
+    <div class="result" id="js-result">
+      <h2>けっか</h2>
+      <div class="result-list">
+        <ul></ul>
+      </div>
+      <div class="result-list">
+        <ul></ul>
+      </div>
+      <div class="result-list">
+        <ul></ul>
+      </div>
+      <div class="result-list">
+        <ul></ul>
+      </div>
+      <div class="result-list">
+        <ul></ul>
+      </div>
+      <div class="result-list">
+        <p id="result-score"></p>
+      </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
