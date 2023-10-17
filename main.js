@@ -75,7 +75,7 @@ const quizData = [
     {pokemon: 'img/487On.png', cry: 'audio/487.wav', name: 'ギラティナ'},
     {pokemon: 'img/488n.png', cry: 'audio/488.wav', name: 'クレセリア'},
     {pokemon: 'img/491n.png', cry: 'audio/491.wav', name: 'ダークライ'},
-    {pokemon: 'img/494An.png', cry: 'audio/493.wav', name: 'アルセウス'},
+    {pokemon: 'img/493An.png', cry: 'audio/493.wav', name: 'アルセウス'},
     {pokemon: 'img/508n.png', cry: 'audio/508.wav', name: 'ムーランド'},
     {pokemon: 'img/527n.png', cry: 'audio/527.wav', name: 'コロモリ'},
     {pokemon: 'img/538n.png', cry: 'audio/538.wav', name: 'ナゲキ'},
