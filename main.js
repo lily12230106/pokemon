@@ -123,7 +123,7 @@ const quizData = [
     {pokemon: 'img/778An.png', cry: 'audio/778.wav', name: 'ミミッキュ'},
     {pokemon: 'img/785n.png', cry: 'audio/785.wav', name: 'カプ・コケコ'},
     {pokemon: 'img/786n.png', cry: 'audio/786.wav', name: 'カプ・テテフ'},
-    {pokemon: 'img/787n.png', cry: 'audio787/.wav', name: 'カプ・ブルル'},
+    {pokemon: 'img/787n.png', cry: 'audio/787.wav', name: 'カプ・ブルル'},
     {pokemon: 'img/788n.png', cry: 'audio/788.wav', name: 'カプ・レヒレ'},
     {pokemon: 'img/791n.png', cry: 'audio/791.wav', name: 'ソルガレオ'},
     {pokemon: 'img/792n.png', cry: 'audio/792.wav', name: 'ルナアーラ'},
