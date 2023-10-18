@@ -150,6 +150,7 @@ function audio() {
     c1img.onclick = function() { clickHandler(this); }
     c2img.onclick = function() { clickHandler(this); }
     c3img.onclick = function() { clickHandler(this); }
+    c4img.onclick = function() { clickHandler(this); }
 }
 
 let quiz;
@@ -160,6 +161,7 @@ let ulIndex = 0;
 let c1img = document.getElementById('c1-img');
 let c2img = document.getElementById('c2-img');
 let c3img = document.getElementById('c3-img');
+let c4img = document.getElementById('c4-img');
 let qaudio = document.getElementById('qu-audio');
 let judge = document.querySelector('.main .judge');
 const next = document.getElementById('js-next');
@@ -175,7 +177,7 @@ function setupQuiz() {
     qaudio.volume = 0.1; // 音量を半分に設定
     
     const choices = [quiz.pokemon];
-    while (choices.length < 3) {
+    while (choices.length < 4) {
         const randomChoiceIndex = Math.floor(Math.random() * quizData.length);
         const randomChoice = quizData[randomChoiceIndex].pokemon;
         if (!choices.includes(randomChoice)) {
@@ -193,14 +195,18 @@ function setupQuiz() {
     c1img.src = choices[0];
     c2img.src = choices[1];
     c3img.src = choices[2];
+    c4img.src = choices[3];
+
 
     //初期選択肢クリック無効
     c1img.onclick = null;
     c2img.onclick = null;
     c3img.onclick = null;
+    c4img.onclick = null;
 
     //回数追加
     roundsPlayed++;
+    console.log(roundsPlayed);
 }
 
 setupQuiz();
@@ -234,9 +240,10 @@ function clickHandler(clickedImage) {
     c1img.onclick = null;
     c2img.onclick = null;
     c3img.onclick = null;
+    c4img.onclick = null;
     document.getElementById("js-next").style.display ="block";
     //つぎへ関連
-    if (roundsPlayed < 10) {
+    if (roundsPlayed < 46) {
         next.textContent = 'つぎへ';
         next.addEventListener('click', () => {
             setupQuiz();
