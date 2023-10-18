@@ -252,7 +252,7 @@ function clickHandler(clickedImage) {
             judge.textContent = '';
         });
     } else {
-        next.textContent = '終了！'
+        next.textContent = 'もう１回'
         document.getElementById('result-score').textContent = `${score}0点でした`
         //結果画面表示
         document.getElementById("js-result").style.display ="block";
